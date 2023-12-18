@@ -1,0 +1,69 @@
+@import './../../../styles/variables.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  color: $color-white;
+}
+
+// RED BTN
+.fill.red {
+  background-color: $color-red;
+}
+
+.outline.red {
+  border: 1px solid $color-red;
+  background-color: transparent;
+  color: $color-red;
+}
+
+// BLACK BTN
+
+.fill.black {
+  background-color: $color-dark;
+}
+
+.outline.black {
+  border: 1px solid $color-dark;
+  background-color: transparent;
+  color: $color-dark;
+}
+
+// GRAY BTN
+
+.fill.gray {
+  background-color: $color-light-gray;
+  color: $color-dark;
+}
+.fill.gray.active {
+  background-color: $color-dark;
+  color: $color-white;
+}
+
+.outline.gray {
+  border: 1px solid $color-light-gray;
+  color: $color-dark;
+}
+
+// SIZE
+
+.full {
+  width: 100%;
+}
+
+.small {
+  width: 50px;
+  height: 50px;
+}
+
+.medium {
+  width: 408px;
+  padding: 10px 0px;
+}
+
+.large {
+  width: 408px;
+  padding: 25px 0px;
+}

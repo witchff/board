@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+@mixin title0() {
+  font-weight: 700;
+  font-size: $font-size-48;
+  color: $color-dark;
+}
+
+@mixin title1() {
+  font-weight: 700;
+  font-size: $font-size-32;
+  color: $color-dark;
+  line-height: $line-height-40;
+}
+
+@mixin title2() {
+  font-weight: 700;
+  font-size: $font-size-21;
+  color: $color-dark;
+  line-height: $line-height-35;
+}
+
+@mixin title3() {
+  font-weight: 500;
+  font-size: $font-size-16;
+  color: $color-dark;
+  line-height: $line-height-30;
+}
+
+@mixin title4() {
+  font-weight: 500;
+  font-size: $font-size-14;
+  color: $color-dark;
+  line-height: $line-height-25;
+}
+
+@mixin subtitle1() {
+  font-weight: 500;
+  font-size: $font-size-21;
+  line-height: $line-height-35;
+}
+
+@mixin subtitle2() {
+  font-weight: 500;
+  font-size: $font-size-18;
+  line-height: $line-height-30;
+}
+
+@mixin subtitle3() {
+  font-weight: 500;
+  font-size: $font-size-16;
+  line-height: $line-height-30;
+}
