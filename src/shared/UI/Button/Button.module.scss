@@ -6,45 +6,102 @@
   justify-content: center;
   column-gap: 10px;
   color: $color-white;
+  transition: background-color 0.3s linear;
+}
+
+.fill {
+  &:disabled {
+    background-color: $background-btn-disabled-fill !important;
+    color: $text-btn-disabled-fill !important;
+  }
+}
+
+.outline {
+  &:disabled {
+    background-color: $background-btn-disabled-outline !important;
+    color: $text-btn-disabled-outline !important;
+  }
 }
 
 // RED BTN
+
+.red {
+  font-size: $font-size-18;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-20;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+
+  &:hover:enabled {
+    background-color: $background-btn-red-hover !important;
+    color: $color-white !important;
+  }
+}
+
 .fill.red {
-  background-color: $color-red;
+  background-color: $background-btn-red;
 }
 
 .outline.red {
-  border: 1px solid $color-red;
+  &:enabled {
+    border: 1px solid $background-btn-red;
+  }
   background-color: transparent;
-  color: $color-red;
+  color: $background-btn-red;
 }
 
 // BLACK BTN
 
+.black {
+  font-size: $font-size-16;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-30;
+  letter-spacing: -0.32px;
+
+  &:hover:enabled {
+    background-color: #2e2e2e !important;
+    color: $color-white !important;
+  }
+}
+
 .fill.black {
-  background-color: $color-dark;
+  background-color: $background-btn-black;
 }
 
 .outline.black {
-  border: 1px solid $color-dark;
+  &:enabled {
+    border: 1px solid $background-btn-black;
+  }
   background-color: transparent;
-  color: $color-dark;
+  color: $background-btn-black;
 }
 
 // GRAY BTN
 
+.gray {
+  font-size: $font-size-14;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-25;
+  letter-spacing: -0.28px;
+
+  &:hover:enabled {
+    background-color: $background-btn-gray-hover !important;
+  }
+}
+
 .fill.gray {
-  background-color: $color-light-gray;
-  color: $color-dark;
+  background-color: $background-btn-gray;
+  color: $background-btn-black;
 }
 .fill.gray.active {
-  background-color: $color-dark;
+  background-color: $background-btn-black;
   color: $color-white;
 }
 
 .outline.gray {
-  border: 1px solid $color-light-gray;
-  color: $color-dark;
+  border: 1px solid $background-btn-gray;
+  color: $background-btn-gray;
 }
 
 // SIZE

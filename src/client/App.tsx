@@ -7,12 +7,11 @@ function App() {
     <div className={styles.app}>
       <Button
         as='button'
-        type='button'
-        backColor='red'
-        variant='fill'
         size='medium'
+        variant='outline'
+        backColor='gray'
       >
-        Кнопка
+        Оформить доставку
       </Button>
     </div>
   );

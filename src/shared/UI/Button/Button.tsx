@@ -31,7 +31,7 @@ function Button<
   active,
   as,
   ...otherProps
-}: ButtonProps<A>) {
+}: ButtonProps<A>): JSX.Element {
   const classes = [
     styles.button,
     styles[variant],

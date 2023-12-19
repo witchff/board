@@ -8,7 +8,7 @@ $color-gray-primary: #ced4d7;
 $color-light-gray: #f2f2f2;
 $color-green: #219653;
 $color-red: #eb5757;
-$color-gray-secondary: #ced4d7;
+$color-gray-secondary: #bdbdbd;
 
 /* Font */
 $font-family-main: 'Gtrsk Peta';
@@ -23,6 +23,12 @@ $font-size-14: 14px;
 $font-size-12: 12px;
 $font-size-8: 8px;
 
+// Font Weight
+
+$font-weight-regular: 400;
+$font-weight-medium: 400;
+$font-weight-bold: 400;
+
 // Line Height
 $line-height-40: 40px;
 $line-height-35: 35px;
@@ -31,5 +37,17 @@ $line-height-25: 25px;
 $line-height-20: 20px;
 $line-height-10: 10px;
 
-:root {
-}
+// BTN
+$background-btn-red: $color-red;
+$background-btn-black: $color-dark;
+$background-btn-gray: $color-light-gray;
+
+$background-btn-black-hover: #2e2e2e;
+$background-btn-red-hover: #c74c4c;
+$background-btn-gray-hover: #dedcdc;
+
+$background-btn-disabled-fill: $color-gray-primary;
+$text-btn-disabled-fill: $color-dark-gray;
+
+$background-btn-disabled-outline: $color-gray-secondary;
+$text-btn-disabled-outline: $color-gray-primary;
