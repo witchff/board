@@ -1,5 +1,7 @@
 @import './../../../styles/variables.scss';
 
+// Общие стили для кнопки
+
 .button {
   display: flex;
   align-items: center;
@@ -32,9 +34,13 @@
   letter-spacing: -0.36px;
   text-transform: uppercase;
 
-  &:hover:enabled {
+  &:hover {
     background-color: $background-btn-red-hover !important;
     color: $color-white !important;
+  }
+
+  &:disabled {
+    pointer-events: none;
   }
 }
 
@@ -43,11 +49,13 @@
 }
 
 .outline.red {
-  &:enabled {
-    border: 1px solid $background-btn-red;
-  }
+  border: 1px solid $background-btn-red;
   background-color: transparent;
   color: $background-btn-red;
+
+  &:disabled {
+    border: none;
+  }
 }
 
 // BLACK BTN
@@ -59,9 +67,13 @@
   line-height: $line-height-30;
   letter-spacing: -0.32px;
 
-  &:hover:enabled {
+  &:hover {
     background-color: #2e2e2e !important;
     color: $color-white !important;
+  }
+
+  &:disabled {
+    pointer-events: none;
   }
 }
 
@@ -70,11 +82,13 @@
 }
 
 .outline.black {
-  &:enabled {
-    border: 1px solid $background-btn-black;
-  }
+  border: 1px solid $background-btn-black;
   background-color: transparent;
   color: $background-btn-black;
+
+  &:disabled {
+    border: none;
+  }
 }
 
 // GRAY BTN
@@ -85,8 +99,12 @@
   line-height: $line-height-25;
   letter-spacing: -0.28px;
 
-  &:hover:enabled {
+  &:hover {
     background-color: $background-btn-gray-hover !important;
+  }
+
+  &:disabled {
+    pointer-events: none;
   }
 }
 
@@ -94,14 +112,15 @@
   background-color: $background-btn-gray;
   color: $background-btn-black;
 }
-.fill.gray.active {
-  background-color: $background-btn-black;
-  color: $color-white;
-}
 
 .outline.gray {
   border: 1px solid $background-btn-gray;
   color: $background-btn-gray;
+}
+
+.fill.gray.active {
+  background-color: $background-btn-black;
+  color: $color-white;
 }
 
 // SIZE

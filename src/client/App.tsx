@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './App.module.scss';
 import Button from 'shared/UI/Button/Button';
+import styles from './App.module.scss';
 
 function App() {
   return (
     <div className={styles.app}>
       <Button
-        as='button'
+        as={'button'}
         size='medium'
-        variant='outline'
+        variant='fill'
         backColor='gray'
       >
         Оформить доставку
