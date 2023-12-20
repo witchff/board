@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: 1px solid $color-gray-primary;
+  padding: 12px 20px;
+
+  ::placeholder {
+    color: $color-dark-gray;
+    font-size: $font-size-12;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-25;
+    letter-spacing: -0.24px;
+  }
+}
+
+.icon {
+  width: 29px;
+  height: 19px;
+  fill: #828b8d;
+}
