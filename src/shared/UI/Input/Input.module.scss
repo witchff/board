@@ -3,11 +3,40 @@
 .label {
   display: flex;
   flex-direction: column;
+
+  &:has(:focus-visible) {
+    .text {
+      transition: all 0.2s linear;
+      font-weight: $font-weight-medium;
+      line-height: $line-height-25;
+    }
+
+    .input {
+      transition: all 0.2s linear;
+      border: 1px solid $color-dark;
+    }
+  }
+}
+
+.inner {
+  position: relative;
+  width: inherit;
+
+  svg {
+    width: 29px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
 }
 
 .input {
   border: 1px solid $color-gray-primary;
-  padding: 12px 20px;
+  padding: 12px 50px 12px 20px;
+  width: inherit;
 
   ::placeholder {
     color: $color-dark-gray;
@@ -18,8 +47,9 @@
   }
 }
 
-.icon {
-  width: 29px;
-  height: 19px;
-  fill: #828b8d;
+.text {
+  font-size: $font-size-12;
+  letter-spacing: -0.24px;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-20;
 }

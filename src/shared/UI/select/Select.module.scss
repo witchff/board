@@ -1,0 +1,93 @@
+@import './../../../styles/variables.scss';
+
+.select {
+}
+
+.title {
+  display: inline-block;
+}
+
+.wrapper {
+  width: 402px;
+  border: 1px solid $color-gray-primary;
+  background: $color-white;
+}
+
+.box {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid $color-gray-primary;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+
+  .defOption {
+    font-size: $font-size-14;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-25;
+    letter-spacing: -0.28px;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+
+    transition: transform 0.25s linear;
+  }
+}
+
+.list {
+  max-height: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  transition: max-height 0.25s linear;
+
+  :hover {
+    background-color: $color-light-gray;
+  }
+
+  //   Стили для скролла
+  margin-right: 20px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    margin: 15px 15px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ced4d7;
+    margin: 15px 15px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
+}
+
+.item {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+
+  font-size: $font-size-14;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-25;
+  letter-spacing: -0.28px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: $color-light-gray;
+  color: $color-dark-gray;
+}
+
+.activeArrow {
+  transform: rotate(180deg);
+}
+
+.open {
+  max-height: 195px;
+}
